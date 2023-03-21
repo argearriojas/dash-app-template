@@ -19,7 +19,7 @@ page_hrefs[0] = ''
 
 page_info_list = [
     {
-        'title': name.capitalize(),
+        'title': ' '.join([n.capitalize() for n in name.split('_')]),
         'module': module,
         'href': f'{url_base_pathname}{href}',
     }
